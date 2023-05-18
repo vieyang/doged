@@ -9,8 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/btcsuite/btcd/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/v2/schnorr"
 )
 
 var (

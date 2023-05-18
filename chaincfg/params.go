@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/dogecoinw/doged/chaincfg/chainhash"
+	"github.com/dogecoinw/doged/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default
@@ -1007,8 +1007,9 @@ func IsBech32SegwitPrefix(prefix string) bool {
 // ErrInvalidHDKeyID error will be returned.
 //
 // Reference:
-//   SLIP-0132 : Registered HD version bytes for BIP-0032
-//   https://github.com/satoshilabs/slips/blob/master/slip-0132.md
+//
+//	SLIP-0132 : Registered HD version bytes for BIP-0032
+//	https://github.com/satoshilabs/slips/blob/master/slip-0132.md
 func RegisterHDKeyID(hdPublicKeyID []byte, hdPrivateKeyID []byte) error {
 	if len(hdPublicKeyID) != 4 || len(hdPrivateKeyID) != 4 {
 		return ErrInvalidHDKeyID

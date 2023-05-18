@@ -8,11 +8,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/btcsuite/btcd/blockchain"
-	"github.com/btcsuite/btcd/blockchain/indexers"
-	"github.com/btcsuite/btcd/database"
-	"github.com/btcsuite/btcd/limits"
 	"github.com/btcsuite/btclog"
+	"github.com/dogecoinw/doged/blockchain"
+	"github.com/dogecoinw/doged/blockchain/indexers"
+	"github.com/dogecoinw/doged/database"
+	"github.com/dogecoinw/doged/limits"
 )
 
 const (

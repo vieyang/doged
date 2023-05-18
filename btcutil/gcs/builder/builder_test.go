@@ -9,13 +9,13 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/btcsuite/btcd/btcutil"
-	"github.com/btcsuite/btcd/btcutil/gcs"
-	"github.com/btcsuite/btcd/btcutil/gcs/builder"
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/txscript"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/dogecoinw/doged/btcutil"
+	"github.com/dogecoinw/doged/btcutil/gcs"
+	"github.com/dogecoinw/doged/btcutil/gcs/builder"
+	"github.com/dogecoinw/doged/chaincfg"
+	"github.com/dogecoinw/doged/chaincfg/chainhash"
+	"github.com/dogecoinw/doged/txscript"
+	"github.com/dogecoinw/doged/wire"
 )
 
 var (

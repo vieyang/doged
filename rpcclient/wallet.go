@@ -8,11 +8,11 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/btcsuite/btcd/btcjson"
-	"github.com/btcsuite/btcd/btcutil"
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/dogecoinw/doged/btcjson"
+	"github.com/dogecoinw/doged/btcutil"
+	"github.com/dogecoinw/doged/chaincfg"
+	"github.com/dogecoinw/doged/chaincfg/chainhash"
+	"github.com/dogecoinw/doged/wire"
 )
 
 // *****************************
@@ -1016,10 +1016,10 @@ func (c *Client) CreateWalletAsync(name string, opts ...CreateWalletOpt) FutureC
 //
 // Optional parameters can be specified using functional-options pattern. The
 // following functions are available:
-//   * WithCreateWalletDisablePrivateKeys
-//   * WithCreateWalletBlank
-//   * WithCreateWalletPassphrase
-//   * WithCreateWalletAvoidReuse
+//   - WithCreateWalletDisablePrivateKeys
+//   - WithCreateWalletBlank
+//   - WithCreateWalletPassphrase
+//   - WithCreateWalletAvoidReuse
 func (c *Client) CreateWallet(name string, opts ...CreateWalletOpt) (*btcjson.CreateWalletResult, error) {
 	return c.CreateWalletAsync(name, opts...).Receive()
 }

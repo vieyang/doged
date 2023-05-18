@@ -11,10 +11,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/database"
-	"github.com/btcsuite/btcd/database/ffldb"
-	"github.com/btcsuite/btcd/btcutil"
+	"github.com/dogecoinw/doged/btcutil"
+	"github.com/dogecoinw/doged/chaincfg"
+	"github.com/dogecoinw/doged/database"
+	"github.com/dogecoinw/doged/database/ffldb"
 )
 
 // dbType is the database type name for this driver.

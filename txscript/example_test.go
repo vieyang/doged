@@ -9,12 +9,11 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/btcsuite/btcd/btcutil"
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/txscript"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/dogecoinw/doged/btcutil"
+	"github.com/dogecoinw/doged/chaincfg"
+	"github.com/dogecoinw/doged/chaincfg/chainhash"
+	"github.com/dogecoinw/doged/txscript"
+	"github.com/dogecoinw/doged/wire"
 )
 
 // This example demonstrates creating a script which pays to a bitcoin address.

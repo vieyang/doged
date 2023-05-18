@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/btcsuite/btcd/database"
-	_ "github.com/btcsuite/btcd/database/ffldb"
+	"github.com/dogecoinw/doged/database"
+	_ "github.com/dogecoinw/doged/database/ffldb"
 )
 
 var (

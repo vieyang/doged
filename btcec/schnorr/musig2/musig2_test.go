@@ -9,8 +9,6 @@ import (
 	"fmt"
 	"sync"
 	"testing"
-
-	"github.com/btcsuite/btcd/btcec/v2"
 )
 
 const (

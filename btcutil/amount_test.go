@@ -7,8 +7,6 @@ package btcutil_test
 import (
 	"math"
 	"testing"
-
-	. "github.com/btcsuite/btcd/btcutil"
 )
 
 func TestAmountCreation(t *testing.T) {

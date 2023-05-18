@@ -3,9 +3,9 @@ package psbt
 import (
 	"bytes"
 
-	"github.com/btcsuite/btcd/btcec/v2/schnorr"
-	"github.com/btcsuite/btcd/txscript"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/txscript"
+	"github.com/dogecoinw/doged/wire"
 )
 
 const (

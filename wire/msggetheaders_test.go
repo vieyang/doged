@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/dogecoinw/doged/chaincfg/chainhash"
 )
 
 // TestGetHeaders tests the MsgGetHeader API.

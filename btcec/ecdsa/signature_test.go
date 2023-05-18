@@ -13,8 +13,6 @@ import (
 	"fmt"
 	"reflect"
 	"testing"
-
-	"github.com/btcsuite/btcd/btcec/v2"
 )
 
 type signatureTest struct {
