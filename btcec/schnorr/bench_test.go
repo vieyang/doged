@@ -8,6 +8,8 @@ package schnorr
 import (
 	"crypto/sha256"
 	"encoding/hex"
+	"github.com/decred/dcrd/dcrec/secp256k1/v4"
+	"github.com/dogecoinw/doged/btcec"
 	"math/big"
 	"testing"
 )

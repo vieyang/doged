@@ -7,6 +7,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"sync"
 	"testing"
 )

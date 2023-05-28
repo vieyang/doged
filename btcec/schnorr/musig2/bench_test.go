@@ -7,6 +7,7 @@ package musig2
 import (
 	"encoding/hex"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"testing"
 
 	"github.com/dogecoinw/doged/btcec/schnorr"

@@ -8,6 +8,7 @@ package schnorr
 import (
 	"encoding/hex"
 	"errors"
+	"github.com/dogecoinw/doged/btcec"
 	"strings"
 	"testing"
 	"testing/quick"
