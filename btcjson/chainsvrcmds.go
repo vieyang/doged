@@ -665,6 +665,28 @@ func NewGetRawTransactionCmd(txHash string, verbose *int) *GetRawTransactionCmd 
 	}
 }
 
+// GetRawTransactionCmd defines the getrawtransaction JSON-RPC command.
+//
+// NOTE: This field is an int versus a bool to remain compatible with Bitcoin
+// Core even though it really should be a bool.
+type GetRawTransactionBoolCmd struct {
+	Txid    string
+	Verbose *bool `jsonrpcdefault:'false'`
+}
+
+// NewGetRawTransactionCmd returns a new instance which can be used to issue a
+// getrawtransaction JSON-RPC command.
+//
+// The parameters which are pointers indicate they are optional.  Passing nil
+// for optional parameters will use the default value.
+
+func NewGetRawTransactionBoolCmd(txHash string, verbose *bool) *GetRawTransactionBoolCmd {
+	return &GetRawTransactionBoolCmd{
+		Txid:    txHash,
+		Verbose: verbose,
+	}
+}
+
 // GetTxOutCmd defines the gettxout JSON-RPC command.
 type GetTxOutCmd struct {
 	Txid           string

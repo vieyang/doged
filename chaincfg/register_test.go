@@ -1,4 +1,4 @@
-package chaincfg_test
+package chaincfg
 
 import (
 	"bytes"

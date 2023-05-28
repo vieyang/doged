@@ -6,6 +6,7 @@ package mempool
 
 import (
 	"encoding/hex"
+	"github.com/dogecoinw/doged/btcec"
 	"reflect"
 	"strings"
 	"sync"

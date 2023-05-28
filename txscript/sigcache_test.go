@@ -6,6 +6,7 @@ package txscript
 
 import (
 	"crypto/rand"
+	"github.com/dogecoinw/doged/btcec"
 	"testing"
 
 	"github.com/dogecoinw/doged/btcec/ecdsa"

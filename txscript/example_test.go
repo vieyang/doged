@@ -8,6 +8,7 @@ package txscript_test
 import (
 	"encoding/hex"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 
 	"github.com/dogecoinw/doged/btcutil"
 	"github.com/dogecoinw/doged/chaincfg"

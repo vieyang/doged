@@ -166,6 +166,29 @@ func (c *Client) GetRawTransactionVerbose(txHash *chainhash.Hash) (*btcjson.TxRa
 	return c.GetRawTransactionVerboseAsync(txHash).Receive()
 }
 
+// GetRawTransactionVerboseAsync returns an instance of a type that can be used
+// to get the result of the RPC at some future time by invoking the Receive
+// function on the returned instance.
+//
+// See GetRawTransactionVerbose for the blocking version and more details.
+func (c *Client) GetRawTransactionVerboseAsyncBool(txHash *chainhash.Hash) FutureGetRawTransactionVerboseResult {
+	hash := ""
+	if txHash != nil {
+		hash = txHash.String()
+	}
+
+	cmd := btcjson.NewGetRawTransactionBoolCmd(hash, btcjson.Bool(true))
+	return c.SendCmd(cmd)
+}
+
+// GetRawTransactionVerbose returns information about a transaction given
+// its hash.
+//
+// See GetRawTransaction to obtain only the transaction already deserialized.
+func (c *Client) GetRawTransactionVerboseBool(txHash *chainhash.Hash) (*btcjson.TxRawResult, error) {
+	return c.GetRawTransactionVerboseAsyncBool(txHash).Receive()
+}
+
 // FutureDecodeRawTransactionResult is a future promise to deliver the result
 // of a DecodeRawTransactionAsync RPC invocation (or an applicable error).
 type FutureDecodeRawTransactionResult chan *Response

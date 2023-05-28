@@ -2,11 +2,12 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil_test
+package btcutil
 
 import (
 	"bytes"
 	"encoding/hex"
+	"github.com/dogecoinw/doged/btcec"
 	"testing"
 
 	"github.com/dogecoinw/doged/chaincfg"

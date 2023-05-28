@@ -14,6 +14,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"math"
 	"runtime"
 	"time"

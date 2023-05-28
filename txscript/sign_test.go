@@ -7,6 +7,7 @@ package txscript
 import (
 	"errors"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"testing"
 
 	"github.com/dogecoinw/doged/btcec/schnorr"

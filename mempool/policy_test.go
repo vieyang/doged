@@ -6,6 +6,7 @@ package mempool
 
 import (
 	"bytes"
+	"github.com/dogecoinw/doged/btcec"
 	"testing"
 	"time"
 
