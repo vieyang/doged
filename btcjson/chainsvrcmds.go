@@ -671,7 +671,7 @@ func NewGetRawTransactionCmd(txHash string, verbose *int) *GetRawTransactionCmd 
 // Core even though it really should be a bool.
 type GetRawTransactionBoolCmd struct {
 	Txid    string
-	Verbose *bool `jsonrpcdefault:'false'`
+	Verbose *bool `jsonrpcdefault:"false"`
 }
 
 // NewGetRawTransactionCmd returns a new instance which can be used to issue a
