@@ -1121,7 +1121,7 @@ func init() {
 	MustRegisterCmd("getnodeaddresses", (*GetNodeAddressesCmd)(nil), flags)
 	MustRegisterCmd("getpeerinfo", (*GetPeerInfoCmd)(nil), flags)
 	MustRegisterCmd("getrawmempool", (*GetRawMempoolCmd)(nil), flags)
-	MustRegisterCmd("getrawtransaction", (*GetRawTransactionCmd)(nil), flags)
+	MustRegisterCmd("getrawtransaction", (*GetRawTransactionBoolCmd)(nil), flags)
 	MustRegisterCmd("gettxout", (*GetTxOutCmd)(nil), flags)
 	MustRegisterCmd("gettxoutproof", (*GetTxOutProofCmd)(nil), flags)
 	MustRegisterCmd("gettxoutsetinfo", (*GetTxOutSetInfoCmd)(nil), flags)
