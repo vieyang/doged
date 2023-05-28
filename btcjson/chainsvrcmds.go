@@ -211,6 +211,24 @@ func NewGetBlockCmd(hash string, verbosity *int) *GetBlockCmd {
 	}
 }
 
+// GetBlockCmd defines the getblock JSON-RPC command.
+type GetBlockBoolCmd struct {
+	Hash      string
+	Verbosity *bool `jsonrpcdefault:"false"`
+}
+
+// NewGetBlockCmd returns a new instance which can be used to issue a getblock
+// JSON-RPC command.
+//
+// The parameters which are pointers indicate they are optional.  Passing nil
+// for optional parameters will use the default value.
+func NewGetBlockBoolCmd(hash string, verbosity *bool) *GetBlockBoolCmd {
+	return &GetBlockBoolCmd{
+		Hash:      hash,
+		Verbosity: verbosity,
+	}
+}
+
 // GetBlockChainInfoCmd defines the getblockchaininfo JSON-RPC command.
 type GetBlockChainInfoCmd struct{}
 
