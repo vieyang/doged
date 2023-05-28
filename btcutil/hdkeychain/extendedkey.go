@@ -16,6 +16,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"math/big"
 
 	"github.com/dogecoinw/doged/btcutil"

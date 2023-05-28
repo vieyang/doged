@@ -8,6 +8,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"sync"
 
 	"github.com/dogecoinw/doged/blockchain"
