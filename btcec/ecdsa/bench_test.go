@@ -7,10 +7,10 @@ package ecdsa
 
 import (
 	"encoding/hex"
+	"github.com/decred/dcrd/dcrec/secp256k1/v4"
+	"github.com/dogecoinw/doged/btcec"
 	"math/big"
 	"testing"
-
-	"github.com/decred/dcrd/dcrec/secp256k1/v4"
 )
 
 // hexToBytes converts the passed hex string into bytes and will panic if there

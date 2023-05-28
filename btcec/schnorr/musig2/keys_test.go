@@ -6,13 +6,14 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"os"
 	"path"
 	"strings"
 	"testing"
 
 	secp "github.com/decred/dcrd/dcrec/secp256k1/v4"
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 	"github.com/stretchr/testify/require"
 )
 

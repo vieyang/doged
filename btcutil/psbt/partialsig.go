@@ -2,7 +2,8 @@ package psbt
 
 import (
 	"bytes"
-	"github.com/dogecoinw/doged/btcec/v2/ecdsa"
+	btcec "github.com/dogecoinw/doged/btcec"
+	"github.com/dogecoinw/doged/btcec/ecdsa"
 )
 
 // PartialSig encapsulate a (BTC public key, ECDSA signature)

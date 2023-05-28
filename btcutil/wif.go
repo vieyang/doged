@@ -7,6 +7,7 @@ package btcutil
 import (
 	"bytes"
 	"errors"
+	"github.com/dogecoinw/doged/btcec"
 
 	"github.com/dogecoinw/doged/btcutil/base58"
 	"github.com/dogecoinw/doged/chaincfg"

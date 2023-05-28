@@ -9,6 +9,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"math/big"
 	"strings"
 

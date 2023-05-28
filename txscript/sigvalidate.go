@@ -6,9 +6,10 @@ package txscript
 
 import (
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 
-	"github.com/dogecoinw/doged/btcec/v2/ecdsa"
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/ecdsa"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 	"github.com/dogecoinw/doged/chaincfg/chainhash"
 	"github.com/dogecoinw/doged/wire"
 )

@@ -11,12 +11,13 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"hash"
 	"strings"
 
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/dogecoinw/doged/btcec/v2/ecdsa"
+	"github.com/dogecoinw/doged/btcec/ecdsa"
 	"github.com/dogecoinw/doged/chaincfg/chainhash"
 	"github.com/dogecoinw/doged/wire"
 )

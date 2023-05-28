@@ -9,6 +9,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"strings"
 
 	"github.com/dogecoinw/doged/btcutil/base58"

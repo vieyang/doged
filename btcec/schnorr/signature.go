@@ -4,6 +4,7 @@ package schnorr
 
 import (
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 
 	secp "github.com/decred/dcrd/dcrec/secp256k1/v4"
 	ecdsa_schnorr "github.com/decred/dcrd/dcrec/secp256k1/v4/schnorr"

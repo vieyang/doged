@@ -8,6 +8,7 @@ package ecdsa
 import (
 	"errors"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"math/big"
 
 	secp_ecdsa "github.com/decred/dcrd/dcrec/secp256k1/v4/ecdsa"

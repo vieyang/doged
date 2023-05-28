@@ -22,7 +22,7 @@ import (
 	"github.com/dogecoinw/doged/peer"
 	"github.com/dogecoinw/doged/txscript"
 
-	"github.com/btcsuite/btclog"
+	"github.com/dogecoinw/doged/btclog"
 	"github.com/jrick/logrotate/rotator"
 )
 

@@ -8,7 +8,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/dogecoinw/doged/btcec/v2/ecdsa"
+	"github.com/dogecoinw/doged/btcec/ecdsa"
 	"github.com/dogecoinw/doged/chaincfg/chainhash"
 )
 

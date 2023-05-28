@@ -4,8 +4,9 @@ package musig2
 
 import (
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 )
 
 var (

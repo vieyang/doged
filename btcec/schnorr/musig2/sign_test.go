@@ -7,6 +7,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"os"
 	"path"
 	"strings"

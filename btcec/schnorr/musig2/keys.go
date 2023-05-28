@@ -5,11 +5,12 @@ package musig2
 import (
 	"bytes"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 	"sort"
 
 	secp "github.com/decred/dcrd/dcrec/secp256k1/v4"
 
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 	"github.com/dogecoinw/doged/chaincfg/chainhash"
 )
 

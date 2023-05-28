@@ -5,6 +5,7 @@
 package blockchain
 
 import (
+	"github.com/dogecoinw/doged/btcec"
 	"github.com/dogecoinw/doged/txscript"
 )
 

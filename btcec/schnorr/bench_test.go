@@ -10,8 +10,6 @@ import (
 	"encoding/hex"
 	"math/big"
 	"testing"
-
-	"github.com/dogecoinw/doged/btcec/v2"
 )
 
 // hexToBytes converts the passed hex string into bytes and will panic if there

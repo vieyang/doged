@@ -30,7 +30,7 @@ import (
 	"github.com/btcsuite/websocket"
 	"github.com/dogecoinw/doged/blockchain"
 	"github.com/dogecoinw/doged/blockchain/indexers"
-	"github.com/dogecoinw/doged/btcec/v2/ecdsa"
+	"github.com/dogecoinw/doged/btcec/ecdsa"
 	"github.com/dogecoinw/doged/btcjson"
 	"github.com/dogecoinw/doged/btcutil"
 	"github.com/dogecoinw/doged/chaincfg"

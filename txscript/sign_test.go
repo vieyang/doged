@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 	"github.com/dogecoinw/doged/btcutil"
 	"github.com/dogecoinw/doged/chaincfg"
 	"github.com/dogecoinw/doged/chaincfg/chainhash"

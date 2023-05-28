@@ -7,7 +7,7 @@ package ffldb
 import (
 	"fmt"
 
-	"github.com/btcsuite/btclog"
+	"github.com/dogecoinw/doged/btclog"
 	"github.com/dogecoinw/doged/database"
 	"github.com/dogecoinw/doged/wire"
 )

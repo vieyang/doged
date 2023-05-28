@@ -3,7 +3,7 @@ package psbt
 import (
 	"bytes"
 
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 	"github.com/dogecoinw/doged/txscript"
 	"github.com/dogecoinw/doged/wire"
 )

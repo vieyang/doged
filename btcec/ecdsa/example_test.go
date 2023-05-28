@@ -7,8 +7,9 @@ package ecdsa_test
 import (
 	"encoding/hex"
 	"fmt"
+	"github.com/dogecoinw/doged/btcec"
 
-	"github.com/dogecoinw/doged/btcec/v2/ecdsa"
+	"github.com/dogecoinw/doged/btcec/ecdsa"
 	"github.com/dogecoinw/doged/chaincfg/chainhash"
 )
 

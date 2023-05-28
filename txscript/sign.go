@@ -6,11 +6,12 @@ package txscript
 
 import (
 	"errors"
+	"github.com/dogecoinw/doged/btcec"
 
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 	"github.com/dogecoinw/doged/btcutil"
 
-	"github.com/dogecoinw/doged/btcec/v2/ecdsa"
+	"github.com/dogecoinw/doged/btcec/ecdsa"
 	"github.com/dogecoinw/doged/chaincfg"
 	"github.com/dogecoinw/doged/wire"
 )

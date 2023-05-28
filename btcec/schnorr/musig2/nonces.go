@@ -7,9 +7,10 @@ import (
 	"crypto/rand"
 	"encoding/binary"
 	"errors"
+	"github.com/dogecoinw/doged/btcec"
 	"io"
 
-	"github.com/dogecoinw/doged/btcec/v2/schnorr"
+	"github.com/dogecoinw/doged/btcec/schnorr"
 	"github.com/dogecoinw/doged/chaincfg/chainhash"
 )
 
