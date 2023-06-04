@@ -1067,7 +1067,7 @@ func getDifficultyRatio(bits uint32, params *chaincfg.Params) float64 {
 
 // handleGetBlock implements the getblock command.
 func handleGetBlock(s *rpcServer, cmd interface{}, closeChan <-chan struct{}) (interface{}, error) {
-	c := cmd.(*btcjson.GetBlockCmd)
+	c := cmd.(*btcjson.GetBlockBoolCmd)
 
 	// Load the raw block bytes from the database.
 	hash, err := chainhash.NewHashFromStr(c.Hash)
@@ -1087,7 +1087,7 @@ func handleGetBlock(s *rpcServer, cmd interface{}, closeChan <-chan struct{}) (i
 		}
 	}
 	// If verbosity is 0, return the serialized block as a hex encoded string.
-	if c.Verbosity != nil && *c.Verbosity == 0 {
+	if c.Verbosity != nil && *c.Verbosity {
 		return hex.EncodeToString(blkBytes), nil
 	}
 
@@ -1140,7 +1140,7 @@ func handleGetBlock(s *rpcServer, cmd interface{}, closeChan <-chan struct{}) (i
 		NextHash:      nextHashString,
 	}
 
-	if *c.Verbosity == 1 {
+	if *c.Verbosity {
 		transactions := blk.Transactions()
 		txNames := make([]string, len(transactions))
 		for i, tx := range transactions {
