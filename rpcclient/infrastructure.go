@@ -1481,6 +1481,8 @@ func New(config *ConnConfig, ntfnHandlers *NotificationHandlers) (*Client, error
 		client.chainParams = &chaincfg.RegressionNetParams
 	case chaincfg.SimNetParams.Name:
 		client.chainParams = &chaincfg.SimNetParams
+	case chaincfg.TestNetParams.Name:
+		client.chainParams = &chaincfg.TestNetParams
 	default:
 		return nil, fmt.Errorf("rpcclient.New: Unknown chain %s", config.Params)
 	}

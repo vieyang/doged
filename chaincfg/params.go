@@ -431,6 +431,37 @@ var MainNetParams = Params{
 	HDCoinType: 3,
 }
 
+// TestNetParams defines the network parameters for the Dogecoin testnet network.
+var TestNetParams = Params{
+	Name:        "testnet",
+	Net:         wire.TestNet,
+	DefaultPort: "44555",
+	DNSSeeds:    []DNSSeed{},
+
+	/*
+		Dogecoin Pubkey: 30
+		Dogecoin Script: 22
+		Dogecoin Secret Key: 158
+
+		Testnet Pubkey: 113
+		Testnet Script: 196
+		Testnet Secret Key: 241
+	*/
+
+	Bech32HRPSegwit: "doge",
+
+	PubKeyHashAddrID:        0x71, // 113
+	ScriptHashAddrID:        0xc4, // 196
+	PrivateKeyID:            0xf1, // 241
+	WitnessPubKeyHashAddrID: 0x00,
+	WitnessScriptHashAddrID: 0x00,
+
+	HDPublicKeyID:  [4]byte{0x02, 0xfa, 0xca, 0xfd},
+	HDPrivateKeyID: [4]byte{0x02, 0xfa, 0xc3, 0x98},
+
+	HDCoinType: 3,
+}
+
 // RegressionNetParams defines the network parameters for the regression test
 // Bitcoin network.  Not to be confused with the test Bitcoin network (version
 // 3), this network is sometimes simply called "testnet".
